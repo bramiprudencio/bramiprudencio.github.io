@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+h1, h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.section {
+  margin-bottom: 2rem;
+}
+.contact a {
+  display: block;
+  color: #007acc;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}

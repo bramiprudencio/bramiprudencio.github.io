@@ -1,31 +1,125 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 2rem;
-  background: #f4f4f4;
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent: #a4b4f4ce;
+  --section-border: #333;
 }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+nav {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--section-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--accent);
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: white;
+}
+
 .container {
   max-width: 800px;
   margin: auto;
-  background: white;
   padding: 2rem;
-  border-radius: 8px;
 }
-h1, h2 {
-  border-bottom: 2px solid #ddd;
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--section-border);
   padding-bottom: 0.3rem;
+  margin-top: 2rem;
 }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
-.section {
-  margin-bottom: 2rem;
-}
+
 .contact a {
   display: block;
-  color: #007acc;
+  margin-bottom: 0.3rem;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+img.blog-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid var(--section-border);
+  margin-top: 3rem;
+}
+
+footer .contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+footer a {
+  display: block;
+  color: var(--accent);
   text-decoration: none;
   margin-bottom: 0.3rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

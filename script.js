@@ -23,3 +23,14 @@ function loadPage(page) {
       content.innerHTML = html;
     });
 }
+
+function styler(attr){
+  var href;
+  switch(attr){
+      case'1':href = "terminal.css";break;
+      case'2':href = "resume.css";break;
+      case'3':href = "blog.css";break;
+      default:;break;
+  }
+  document.getElementById('myStyleSheet').href = href;
+}

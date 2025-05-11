@@ -2,7 +2,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const content = document.getElementById('content');
 
 // Load default page (portfolio)
-loadPage('portfolio.html');
+loadPage('home.html');
 
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {

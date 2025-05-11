@@ -6,14 +6,15 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #0f0f0f;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
+  padding: 0;
 }
 
 nav {
-  background-color: #1e1e1e;
+  background-color: #000;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
@@ -24,16 +25,16 @@ nav {
 }
 
 nav a {
-  color: var(--accent);
-  margin: 0 1.5rem;
+  font-family: monospace;
+  color: #33ff33;
+  margin: 0 1rem;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  position: relative;
 }
 
-nav a:hover,
-nav a.active {
-  color: white;
+nav a.active::after {
+  content: " ←";
+  animation: blink 1s step-end infinite;
 }
 
 .container {
@@ -98,7 +99,7 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
   border-top: 1px solid var(--section-border);
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 footer .contact {
@@ -123,3 +124,8 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+footer i {
+  margin-right: 8px;
+}
+

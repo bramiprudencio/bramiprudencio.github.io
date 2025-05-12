@@ -2,7 +2,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const content = document.getElementById('content');
 
 // Load default page (portfolio)
-loadPage('home.html');
+loadPage('terminal.html');
 
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
@@ -12,7 +12,8 @@ navLinks.forEach(link => {
     navLinks.forEach(l => l.classList.remove('active'));
     link.classList.add('active');
 
-    loadPage(page);
+    loadPage(page + '.html');
+    document.getElementById('myStyleSheet').href = page + '.css';
   });
 });
 

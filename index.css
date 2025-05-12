@@ -1,0 +1,45 @@
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+}
+
+.navbar-fixed li {
+  margin-right: 1rem;
+}
+
+.navbar-fixed .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ccc;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.navbar-fixed .nav-link:hover {
+  background-color: #333;
+  color: #33ff33;
+}
+
+.navbar-fixed .nav-link.active {
+  background-color: #000;
+  color: #33ff33;
+  font-weight: bold;
+  border: 1px solid #444;
+}
